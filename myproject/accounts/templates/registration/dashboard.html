@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap-Track Attendance Monitoring</title>
+    <style>
+        body {
+            background: url('/static/icons/background.jpg');
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 100px;
+        }
+        .option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+        .option img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .option p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        h1 {
+            /* background: rgba(0, 0, 0, 0.6);
+            display: inline-block; */
+            padding: 15px;
+            border-radius: 10px;
+            color: #1cb8b0;
+        } 
+    </style>
+</head>
+<body>
+
+    <h1> ATTENDANCE MONITORING</h1>
+
+    <div class="container">
+        <div class="option" onclick="location.href='/mark-attendance'">
+            <img src="/static/icons/face_scan.jpg" alt="Mark Attendance">
+            <p>Today's Attendance</p>
+        </div>
+        <div class="option" onclick="location.href='/attendance-report'">
+            <img src="/static/icons/report1.png" alt="Attendance Report">
+            <p>Monthly Attendance</p>
+        </div>
+    </div>
+
+</body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Attendance Monitoring</title>
+<style>
+ /* Fullscreen Video Background */
+.video-container 
+{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+z-index: -1;
+}
+
+.video-container video 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+ /* Main Page Styling */
+body 
+{
+    background-color: #375ace;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container 
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.option 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option img 
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.option p 
+{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h1 
+{
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+</style>
+</head>
+<body>
+
+     <!-- Background Video --
+     <div class="video-container">
+              <video autoplay loop muted>
+             <source src="/static/videos/background.mp4" type="video/mp4">
+             Your browser does not support the video tag.
+            </video> 
+     </div>
+
+     <h1>ATTENDANCE MONITORING</h1>
+
+     <div class="container">
+     <div class="option" onclick="location.href='/mark-attendance'">
+             <img src="/static/icons/face_scan.jpg" alt="Mark Attendance">
+             <p>Mark Your Attendance</p>
+         </div>
+         <div class="option" onclick="location.href='/attendance-report'">
+             <img src="/static/icons/report.png" alt="Attendance Report">
+             <p>Attendance Report</p>
+        </div>
+    </div>
+
+</body>
+</html> -->
